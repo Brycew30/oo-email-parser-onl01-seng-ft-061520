@@ -8,6 +8,7 @@ attr_accessor :emails
  def parse
    emails.split.collect do |address|
      address.split(',')
+   end
  end
 end
 #that accepts a string of unformatted 
