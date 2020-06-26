@@ -9,7 +9,7 @@ attr_accessor :emails
    emails.split.collect do |address|
      address.split(',')
    end
- end
+ end.flatten
 end
 #that accepts a string of unformatted 
 # emails. The parse method on the class should separate them into
